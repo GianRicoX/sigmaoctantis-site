@@ -25,9 +25,10 @@ body {
   color: var(--text);
   line-height: 1.6;
   background:
-  radial-gradient(circle at 20% 10%, rgba(110, 231, 216, 0.35), transparent 30%),
-  radial-gradient(circle at 80% 20%, rgba(141, 211, 255, 0.25), transparent 28%),
-  linear-gradient(180deg, #18264a 0%, #243b64 50%, #12213f 100%);
+    radial-gradient(circle at 12% 18%, rgba(126, 87, 255, 0.28), transparent 30%),
+    radial-gradient(circle at 82% 20%, rgba(168, 85, 247, 0.20), transparent 28%),
+    radial-gradient(circle at 50% 75%, rgba(96, 165, 250, 0.14), transparent 32%),
+    linear-gradient(180deg, #090b18 0%, #0d1124 30%, #14173a 65%, #1a1740 100%);
 }
 
 a {
@@ -43,9 +44,9 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(11, 16, 32, 0.72);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--line);
+  background: rgba(9, 11, 24, 0.45);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .nav {
@@ -163,11 +164,16 @@ p {
 }
 
 .card {
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 22px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.045),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
   padding: 24px;
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+  backdrop-filter: blur(10px);
 }
 
 .card p {
@@ -175,11 +181,16 @@ p {
 }
 
 .status {
-  background: rgba(141, 211, 255, 0.08);
-  border: 1px solid rgba(141, 211, 255, 0.20);
-  border-radius: 22px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.015)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
   padding: 26px;
   margin-top: 22px;
+  backdrop-filter: blur(10px);
 }
 
 .page {
